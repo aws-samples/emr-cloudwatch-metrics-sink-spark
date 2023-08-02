@@ -98,10 +98,6 @@ SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
 23/02/10 20:14:34 INFO SparkCWStatsdReporter: Sending Metric: spark.application.1676059760810.0002.2.executor.recordsWritten
 ```
 
-## Todo:
-* Add support for custom StatsD port
-* Test with custom metrics
-* Add support for Hadoop and Hive metrics
 
 ## Changelog
 * Added blog post draft with walkthrough and cloudformation example
@@ -111,4 +107,3 @@ SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
 * Fixed a bug where file handles were not closed
 * Fixed a bug where timer and histogram metrics did not have suffixes
 * Fixed a bug with EMR 6.6 related to https://issues.apache.org/jira/browse/SPARK-37078
-* Code cleanup
