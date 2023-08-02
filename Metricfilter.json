@@ -1,0 +1,106 @@
+[
+  {
+    "nameSpace": "jvm",
+    "metricName": "heap.used"
+  },
+  {
+    "nameSpace": "executor",
+    "metricName": "bytesRead"
+  },
+  {
+    "nameSpace": "executor",
+    "metricName": "bytesWritten"
+  },
+  {
+    "nameSpace": "executor",
+    "metricName": "completeTasks"
+  },
+  {
+    "nameSpace": "executor",
+    "metricName": "startedTasks"
+  },
+  {
+    "nameSpace": "executor",
+    "metricName": "runTime"
+  },
+  {
+    "nameSpace": "ExecutorMetrics",
+    "metricName": "TotalGCTime"
+  },
+  {
+    "nameSpace": "applicationMaster",
+    "metricName": "numExecutorsFailed"
+  },
+  {
+    "nameSpace": "applicationMaster",
+    "metricName": "numExecutorsRunning"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "unexcludedExecutors"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "excludedExecutors"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "succeededJobs"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "failedJobs"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "completedStages"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "failedStages"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "skippedStages"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "completedTasks"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "failedTasks"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "skippedTasks"
+  },
+  {
+    "nameSpace": "appStatus",
+    "metricName": "killedTasks"
+  },
+  {
+    "nameSpace": "JVMCPU",
+    "metricName": "jvmCpuTime"
+  },
+  {
+    "nameSpace": "executor",
+    "metricName": "jvmCpuTime"
+  },
+  {
+    "nameSpace": "ExecutorMetrics",
+    "metricName": "MajorGCCount"
+  },
+  {
+    "nameSpace": "ExecutorMetrics",
+    "metricName": "MinorGCCount"
+  },
+  {
+    "nameSpace": "ExecutorMetrics",
+    "metricName": "MajorGCTime"
+  },
+  {
+    "nameSpace": "ExecutorMetrics",
+    "metricName": "MinorGCTime"
+  }
+]
