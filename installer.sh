@@ -20,8 +20,14 @@ sudo mv /tmp/EMRCustomSparkCloudWatchSink/Metricfilter.json /etc/amazon/EMRCusto
 sudo chmod 644 /etc/amazon/EMRCustomSparkCloudWatchSink/Metricfilter.json
 
 # Install CloudWatch Agent
+ARCH=$(uname -m)
+URLARCH="amd64"
+if ["$ARCH" == "aarch64"]; then
+  URLARCH="arm64"
+fi
+
 cd /tmp/EMRCustomSparkCloudWatchSink/
-wget https://s3.amazonaws.com/amazoncloudwatch-agent/linux/amd64/latest/AmazonCloudWatchAgent.zip -O AmazonCloudWatchAgent.zip
+wget https://s3.amazonaws.com/amazoncloudwatch-agent/linux/$URLARCH/latest/AmazonCloudWatchAgent.zip -O AmazonCloudWatchAgent.zip
 unzip -o AmazonCloudWatchAgent.zip
 sudo ./install.sh
 
