@@ -21,8 +21,8 @@ mvn package -P emr-6.x.x
 
 **Note: Select the correct JAR depending on the EMR release used (./emr-5.x vs ./emr-6.x)**
 Pre-built jars are available here:
-* EMR-6.x.x: [spark-emr-cloudwatch-sink-0.0.1.jar](s3://aws-blogs-artifacts-public/artifacts/BDB-3297/emr-6.x.x/spark-emr-cloudwatch-sink-0.0.1.jar)
-* EMR-5.x.x: [spark-emr-cloudwatch-sink-0.0.1.jar](s3://aws-blogs-artifacts-public/artifacts/BDB-3297/emr-5.x.x/spark-emr-cloudwatch-sink-0.0.1.jar)
+* EMR-6.x.x: [spark-emr-cloudwatch-sink-0.0.1.jar](https://aws-blogs-artifacts-public.s3.amazonaws.com/artifacts/BDB-3297/emr-6.x.x/emr-custom-cw-sink-0.0.1.jar)
+* EMR-5.x.x: [spark-emr-cloudwatch-sink-0.0.1.jar](https://aws-blogs-artifacts-public.s3.amazonaws.com/artifacts/BDB-3297/emr-5.x.x/emr-custom-cw-sink-0.0.1.jar)
 
 
 1. Make use of the Spark monitoring [documentation](https://spark.apache.org/docs/3.0.0/monitoring.html) to define the metrics you require in the `Metricfilter.json` file
@@ -70,7 +70,7 @@ spark-submit --class org.apache.spark.examples.SparkPi /usr/lib/spark/examples/j
 ```
 
 ## Viewing Metrics
-Metrics should be available in the Cloudwatch console a few minutes after running the spark job. See `ExampleMetrics.png`. 
+Metrics should be available in the Cloudwatch console a few minutes after running the spark job. See [ExampleMetrics.png](https://github.com/aws-samples/emr-cloudwatch-metrics-sink-spark/blob/main/ExampleMetrics.png). 
 
 ## Troubleshooting
 
