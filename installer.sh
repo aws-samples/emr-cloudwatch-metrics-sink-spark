@@ -22,7 +22,7 @@ sudo chmod 644 /etc/amazon/EMRCustomSparkCloudWatchSink/Metricfilter.json
 # Install CloudWatch Agent
 ARCH=$(uname -m)
 URLARCH="amd64"
-if ["$ARCH" == "aarch64"]; then
+if [[ "$ARCH" == "aarch64" ]]; then
   URLARCH="arm64"
 fi
 
